@@ -1,0 +1,72 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+.mycontainer{
+    width:100%;
+    height:100%;
+    background-color:#999;
+    overflow:hidden;
+}
+.df{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.myslider{
+position:relative ;
+left:0;
+    width:100%;
+    height:150px;
+    background:none;
+}
+.myslide{
+    margin-left:9px;
+    width:100px;
+    min-width:100px;
+    max-width:100px;
+    height:100px;
+    min-height:100px;
+    max-height:100px;
+    background-color:#333;
+    position:relative ;
+    left:0;
+    
+}
+
+#prev{
+   left:10px;
+   top:65px;
+    position:absolute;
+    filter:blur(1px);
+    border-radius:50%;
+    width:15px;
+    height:15px;
+    text-align:center;
+}
+#next{
+    right:10px;
+    top:65px;
+    position:absolute;
+}
+.myslide:first-child{
+    margin-left:170px;
+}
+.myslider {
+  transition: margin-left 0.3s ease-in-out;
+}
+.grn{
+    background-color:green;
+}
+.blu{
+    background-color:blue;
+}
+.whi{
+    background-color:white;
+}
+.red{
+    background-color:red;
+}
+.ora{
+    background-color:orangered;
+}

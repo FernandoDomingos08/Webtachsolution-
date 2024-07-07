@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+  <style>
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+    .mycontainer {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    .df {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .myslider {
+      position: relative;
+      left: 0;
+      width: 100%;
+      height: 350px;
+    }
+    .myslide {
+      margin-left: 10px;
+      height: 300px;
+      width: 300px;
+      max-width: 300px;
+      min-width: 300px;
+      max-height: 300px;
+      min-height: 300px;
+      position: relative;
+      left: -38rem;
+    }
+    .--n {
+      border-radius: 50px;
+      width: 50px;
+      border: none;
+      outline: none;
+      height: 50px;
+      background-position: 100%;
+      background-size: 100%;
+      background-color: transparent;
+    }
+    #prev {
+      left: 10px;
+      top: 140px;
+      position: absolute;
+      background-image: url('botao_left.png');
+    }
+    #next {
+      right: 10px;
+      top: 140px;
+      position: absolute;
+      background-image: url('botao_right.png');
+    }
+    .myslide:first-child {
+      margin-left: 460rem;
+    }
+    .myslider {
+      transition: margin-left 0.3s ease-in-out;
+    }
+    .grn {
+      background-color: green;
+    }
+    .blu {
+      background-color: blue;
+    }
+    .whi {
+      background-color: white;
+    }
+    .red {
+      background-color: red;
+    }
+    .ora {
+      background-color: orangered;
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      let marginValue = 0;
+      const sliderContainer = document.querySelector('.myslider');
+      const moveLeftBtn = document.getElementById('prev');
+      const moveRightBtn = document.getElementById('next');
+      const slideWidth = 100;
+
+      function moveSlider(direction) {
+        const sliderWidth = sliderContainer.scrollWidth;
+
+        if (direction === 'left' && marginValue < 0) {
+          marginValue += slideWidth;
+        } else if (direction === 'right' && marginValue > -(sliderWidth - window.innerWidth)) {
+          marginValue -= slideWidth;
+        }
+
+        sliderContainer.style.marginLeft = `${marginValue}px`;
+
+      }
+
+      moveLeftBtn.addEventListener('click', function () {
+        moveSlider('left');
+      });
+
+      moveRightBtn.addEventListener('click', function () {
+        moveSlider('right');
+      });
+    });
+
+  </script>
+</head>
+<body>
+  <div class="mycontainer">
+    <div class="myslider df">
+      <div class="myslide grn df">
+        1
+      </div>
+      <div class="myslide blu df">
+        2
+      </div>
+      <div class="myslide red df">
+        2
+      </div>
+      <div class="myslide ora df">
+        3
+      </div>
+      <div class="myslide whi df">
+        4
+      </div>
+      <div class="myslide grn df">
+        5
+      </div>
+      <div class="myslide blu df">
+        6
+      </div>
+      <div class="myslide red df">
+        7
+      </div>
+      <div class="myslide ora df">
+        8
+      </div>
+      <div class="myslide whi df">
+        9
+      </div>
+      <div class="myslide grn df">
+        10
+      </div>
+      <div class="myslide blu df">
+        11
+      </div>
+      <div class="myslide red df">
+        12
+      </div>
+      <div class="myslide ora df">
+        13
+      </div>
+      <div class="myslide whi df">
+        14
+      </div>
+      <div class="myslide grn df">
+        15
+      </div>
+      <div class="myslide grn df">
+        16
+      </div>
+      <div class="myslide blu df">
+        17
+      </div>
+      <div class="myslide red df">
+        18
+      </div>
+      <div class="myslide ora df">
+        19
+      </div>
+      <div class="myslide whi df">
+        20
+      </div>
+    </div>
+
+  </div>
+  <div class="btns df">
+    <button id="prev" class="--n"></button>
+    <button id="next" class="--n"></button>
+  </div>
+<footer id="rodape_do_site">
+      <div class="header_do_footer">
+        <div class="logomaca_da_empresa">
+          logo da empresa
+        </div>
+        <div class="redes_ou_midias_sociais">
+          <div class="n1_____ facebook"></div>
+          <div class="n1_____ instagram"></div>
+          <div class="n1_____ linkedln"></div>
+          <div class="n1_____ tiktok"></div>
+          <div class="n1_____ whatsApp"></div>
+        </div>
+      </div>
+      <div class="div_do_centro_do_footer">
+        <div class="div_numero_1">
+          <h1>Sub Menu</h1>
+          <hr class="linha_do_limite_do_footer">
+          <ul>
+            <li><a href="index_wts.html" target="">Inicio</a></li>
+            <li><a href="criacoes_wts.html" target="">Criações</a></li>
+            <li><a href="servicos_wts.html" target="">Serviços</a></li>
+            <li><a href="portfolio_wts.html" target="">Portfólio</a></li>
+            <li><a href="blog_wts.html" target="">Blog</a></li>
+            <li><a href="cursos_wts_.html" target="">Cursos</a></li>
+          </ul>
+        </div>
+        <div class="div_numero_2">
+          <h1>Links rápidos</h1>
+          <hr class="linha_do_limite_do_footer">
+          <ul>
+            <li>Perguntas Frequentes</li>
+            <li>Trabalhe conosco</li>
+            <li>Casos de sucesso</li>
+            <li>Nossa história</li>
+            <li>Suporte</li>
+            <li></li>
+          </ul>
+        </div>
+        <div class="div_numero_3">
+          <h1>Servicos</h1>
+          <hr class="linha_do_limite_do_footer">
+          <ul>
+            <li>Desenvolvimento Website</li>
+            <li>Manunteção de Website</li>
+            <li>Criações de Branding</li>
+            <li>Estrategia de SEO</li>
+            <li>Outras soluções</li>
+            <li></li>
+          </ul>
+        </div>
+        <div class="div_numero_4">
+          <h1>Cursos</h1>
+          <hr class="linha_do_limite_do_footer">
+          <ul>
+            <li><a href="" target=""><abbr title="Curso de html para
+              iniciante">HTML</abbr></a></li>
+            <li><a href="" target=""><abbr title="Curso de css para
+              iniciante">CSS</abbr></a></li>
+            <li><a href="" target=""><abbr title="Curso de Javascript para
+              iniciante">JavaScript</abbr></a></li>
+            <li>React</li>
+            <li>Github</li>
+            <li></li>
+          </ul>
+        </div>
+        <div class="div_numero_5">
+          <h1>Solicitar orcamento</h1>
+          <hr class="linha_do_limite_do_footer">
+          <input type="text" name="" id="">
+          <input type="submit" name="" id="" value="solicitar">
+        </div>
+      </div>
+
+      <div class="footer_do_footer__">
+        <div class="documento_importante">
+          <a href="">Copyright&copy; 2024 Web Tach Solution.</a>
+          <p>
+            Todos os direitos reservados
+          </p>
+        </div>
+        <div class="outros_documentos____">
+          <a href="">Politica de privacidade</a>
+          <p>
+            Termos & condicoes
+          </p>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

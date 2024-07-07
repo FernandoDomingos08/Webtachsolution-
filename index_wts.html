@@ -1,0 +1,1542 @@
+<!DOCTYPE html>
+<html lang=PT-Br>
+
+<head>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="Keyboard" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-compatibe" content="IE-edge">
+  <meta http-equiv="refresh" content="10000">
+  <meta charset="UTF-8">
+  <title>Web tach Solution</title>
+  <link rel="stylesheet" href="style_wts.css">
+  <link rel="icon" href="Logomarca_da_webtachsolution.png">
+  <script src=""></script>
+  <style>
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <header id="navegacao">
+
+      <nav id="navegacao_header">
+        <section class="navegacao_header_left">
+          <button class="navegacao_header_left_button"><a href="sobre_nos_wts.html"
+              id="link_texto_sublinhado">Contato</a></button>
+
+          <button class="navegacao_header_left_button"><a href="sobre_nos_wts.html"
+              id="link_texto_sublinhado">Sobre-nós</a></button>
+
+        </section>
+        <section class="navegatio_header_center">
+          <pre class="logomarca"> Web tach Solution </pre>
+        </section>
+        <section class="navegacao_header_right">
+
+          <a href="login_wts.html" target="_self">
+            <section id="navegacao_header_right_circulo_left" class="navegacao_header_right_circulo">
+              <!--login-->
+            </section>
+          </a>
+
+          <section id="navegacao_header_right_circulo_center" class="navegacao_header_right_circulo">
+            <!--Idioma-->
+          </section>
+
+          <section id="navegacao_header_right_circulo_right" class="navegacao_header_right_circulo">
+
+            <!--Modal-->
+            <script>
+              const dark = document.getElementById('navegacao_header_right_circulo_right')
+              const cabecalho = document.querySelector('div.container')
+
+
+              dark.onclick = function () {
+                this.classList.toggle('open');
+                cabecalho.classList.toggle('open');
+
+              }
+            </script>
+          </section>
+
+        </section>
+      </nav>
+
+      <nav class="line">
+        <hr id="navegacao_center_line">
+      </nav>
+
+      <nav id="navegacao_footer">
+        <menu id="menu_de_navegacao">
+          <button class="menu_de_navegacao_button"><a href="index_wts.html" target="" id="link_texto_sublinhad">Página
+              inicial</a></button>
+          <button class="menu_de_navegacao_button"><a href="servicos_wts.html" target=""
+              id="link_texto_sublinhad">Serviços</a></button>
+
+          <button class="menu_de_navegacao_button"><a href="portfolio_wts.html" target=""
+              id="link_texto_sublinhad">Portfolio</a></button>
+
+          <button class="menu_de_navegacao_button"><a href="blog_wts.html" target=""
+              id="link_texto_sublinhad">Blog</a></button>
+
+          <button class="menu_de_navegacao_button"><a href="cursos_wts_.html" target=""
+              id="link_texto_sublinhad">Cursos</a></button>
+
+
+
+        </menu>
+        <button class="media_responsivo">
+
+        </button>
+      </nav>
+      <script>
+        /* Este e o script da barra de navegacao para ele fazer aqule efeito*/
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+          var currentScrollPos = window.pageYOffset;
+          if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navegacao").classList.remove("hidden");
+          } else {
+            document.getElementById("navegacao").classList.add("hidden");
+          }
+          prevScrollpos = currentScrollPos;
+        };
+      </script>
+    </header>
+
+    <div class="outros_menus">
+      <div class="list-navegation">
+        <button>
+          <a href="index_wts.html" target="">Página
+            inicial</a>
+        </button>
+        <button>
+          <a href="servicos_wts.html" target="">Serviços</a></button>
+
+        <button>
+          <a href="portfolio_wts.html" target="">Portfolio</a>
+        </button>
+
+        <button>
+          <a href="blog_wts.html" target="">Blog</a>
+        </button>
+
+        <button>
+          <a href="cursos_wts_.html" target="">Cursos</a></button>
+          <button ><a href="sobre_nos_wts.html"
+            >Contato</a></button>
+
+        <button ><a href="sobre_nos_wts.html"
+           >Sobre-nós</a></button>
+      </div>
+    </div>
+
+    <script>
+      const mais = document.querySelector('.media_responsivo')
+      const outosMenus = document.querySelector('.outros_menus')
+
+      mais.onclick = function () {
+        this.classList.toggle('active')
+        outosMenus.classList.toggle('active')
+      }
+    </script>
+
+
+
+
+    <!--SLIDER-->
+    <section id="section__" class="-slider" id="sl">
+      <main>
+        <section class="carousell">
+          <div class="img-list" id="img-list">
+            <img width="700" alt="" class="img-slider--1">
+            <img width="700" alt="" class="img-slider--2">
+            <img width="700" alt="" class="img-slider--3">
+            <img width="700" alt="" class="img-slider--4">
+          </div>
+
+          <div class="sobre-nos">
+            <div class="conteudo-sobre-nos">
+              <h1 class="tema-sobre-nos"> Sobre-nós</h1>
+              <hr class="linha-sobre-nos">
+              <div class="texto-sobre-nos">
+                <p>
+                  A Web Tach Solution é uma empresa de desenvolvi&shy;mento
+                  de site que busca criar estratégia de marketing digital de qualquer
+                  empresa que almeja por crescimento.
+                </p>
+                <p>
+                  Por isso, planejamos, desenvolvemos e implemen&shy;tamos com foco
+                  total os resultados.
+                  Por isso, planejamos, desenvolvemos e implemen&shy;tamos com foco
+                  total os resultados.
+                  Por isso, planejamos, desenvolvemos e implemen&shy;tamos com foco
+                  total os resultados.
+
+                </p>
+
+              </div>
+              <a href="sobre_nos_wts.html" target="_blank" rel="">
+                <button type="button" class="btn-sobre-nos-ver-mais">Ver mais</button>
+              </a>
+            </div>
+          </div>
+
+          <div class="btn-section">
+            <div class="caro-btn" onclick="slideImg(0)">
+            </div>
+
+            <div class="caro-btn" onclick="slideImg(1)">
+            </div>
+
+            <div class="caro-btn" onclick="slideImg(2)">
+            </div>
+
+            <div class="caro-btn" onclick="slideImg(3)">
+            </div>
+
+          </div>
+          <script>
+            var imgList = document.getElementById("img-list");
+            var caroBtns = document.getElementsByClassName("caro-btn");
+
+            var status = 0;
+            var positionVit = -1900;
+
+            function slideImg(x) {
+              //..Indice
+              var i;
+              for (i = 0; i < caroBtns.length; i++) {
+                caroBtns[i].style.backgroundColor = "#007FFF";
+              }
+              //...
+              caroBtns[x].style.backgroundColor = "#17224d";
+              position = x * positionVit;
+              imgList.style.left = position + "px";
+            }
+            // Função para trocar o slide a cada 3000ms (1 segundo)
+            function trocarSlide() {
+              status++;
+              if (status >= caroBtns.length) {
+                status = 0;
+              }
+              slideImg(status);
+            }
+
+            // Chamar a função para trocar o slide a cada 1000ms
+            setInterval(trocarSlide, 3000);
+
+
+          </script>
+        </section>
+      </main>
+    </section>
+
+    <!-- Os nossos Principais clientes são: -->
+    <section class="principais_clientes">
+      <div class="temas_dos_principais_clientes">
+        <h1>Alguns dos nossos clientes</h1>
+      </div>
+
+      <div class="logo_dos_principais_clientes">
+        <div class="logo numero1" id="numero1">
+           
+        </div>
+        <div class="logo numero2">
+          Breve
+        </div>
+        <div class="logo numero3">
+          Breve
+        </div>
+        <div class="logo numero4">
+          Breve
+        </div>
+        <div class="logo numero5">
+          Breve
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Nossos serviços -->
+    <section class="nossos_servicos">
+      <div class="tema_nossos_servicos">
+        <h1>Nossos Serviços</h1>
+      </div>
+
+      <div class="conteudo_dos_nossos_servicos">
+        <p>
+          Grandes negócios exigem melhores soluções digitais.
+        </p>
+      </div>
+
+      <div class="container_de_servicos">
+
+        <article class="banner desenvolvimento_web">
+          <a href="servicos_wts.html" class="nooo" target="_self">
+            <main class="banner-icone -desenvolvimento_web">
+
+            </main>
+            <div class="banner-tema desenvolvimento">
+              <h1>Desenvolvimento de site</h1>
+            </div>
+            <div class="conteudo">
+              <p>
+                Oferecemos serviços de desenvolvimento web sob medidas,
+                criando sites de alto desempenho, respon&shy;sívos e visualmente
+                atraentes.
+              </p>
+            </div>
+          </a>
+        </article>
+
+        <article class="banner manutencao_de_websites">
+          <a href="servicos_wts.html" class="nooo" target="_self">
+            <main class="banner-icone -manutencao_de_websites"></main>
+            <div class="banner-tema manutencao_websites">
+              <h1>Manutenção de Websites</h1>
+            </div>
+            <div class="conteudo">
+              <p>
+                Fizemos manutenção nos códigos de websites, minimizando as
+                linhas de código e tornando o site responsivo e também
+                atua&shy;lizamos os conteúdos contido nele.
+              </p>
+            </div>
+          </a>
+        </article>
+
+        <article class="banner branding">
+          <a href="servicos_wts.html" class="nooo" target="_self">
+            <main class="banner-icone -branding"></main>
+            <div class="banner-tema branding">
+              <h1>Marketing Digital</h1>
+            </div>
+            <div class="conteudo">
+              <p>
+                Nossos serviços de marketing digital são estratégicos e
+              abrangente, incluindo SEO, mídias sociais, publicidades online e
+              conteúdos envolvente.
+              </p>
+            </div>
+          </a>
+        </article>
+
+      </div>
+
+      <div class="botao_do_servico">
+        <a href="servicos_wts.html" target="">
+          <button class="vermais_servicos">Ver mais</button>
+        </a>
+      </div>
+
+    </section>
+
+    <!-- Porque escolher nos-->
+    <section class="porque_escolher-nos">
+      <div class="napa">
+        <div class="tema_porque_escolher-nos">
+          <hr>
+          <h1>Porque escolher-nos</h1>
+        </div>
+        <div class="nossas_qualidades">
+
+          <article class="quantidade qualidade_numero1">
+            <div class="logo_do_tipo_de_qualidade logo_numero1"></div>
+            <div class="conteudo_da_qualidade conteudo_n1">
+              <h1>Consultoria e Planejamento</h1>
+              <p>
+                Antes de iniciar o desenvolvimento de um site, é crucial entender
+                os objetivos do negócio. As empresas de desenvolvimento oferecem
+                consultoria para ajudar a definir a estratégia digital, identificar o
+                público-alvo e planejar a estrutura do site.
+              </p>
+            </div>
+          </article>
+
+          <article class="quantidade qualidade_numero2">
+            <div class="logo_do_tipo_de_qualidade logo_numero2"></div>
+            <div class="conteudo_da_qualidade conteudo_n2">
+              <h1>Design Personalizado</h1>
+              <p>
+                O design do site é a primeira impressão que um usuário tem da sua
+                marca. Por isso, é oferecido o serviço de criação de designs únicos,
+                que não só são visualmente atraentes, mas também proporcionam uma
+                ótima experiência de usuário (UX).
+              </p>
+            </div>
+          </article>
+
+          <article class="quantidade qualidade_numero3">
+            <div class="logo_do_tipo_de_qualidade logo_numero3"></div>
+            <div class="conteudo_da_qualidade conteudo_n3">
+              <h1>Manutenção e Suporte</h1>
+              <p>
+                Após o lançamento do site, é importante mantê-lo atualizado e
+                funcionando sem problemas. As empresas oferecem pacotes de
+                manutenção que incluem atualizações de software, backups e
+                suporte técnico.
+              </p>
+            </div>
+          </article>
+
+          <article class="quantidade qualidade_numero4">
+            <div class="logo_do_tipo_de_qualidade logo_numero4"></div>
+            <div class="conteudo_da_qualidade conteudo_n4">
+              <h1>Analytics</h1>
+              <p>
+                A análise de dados do site é crucial para entender como os
+                usuários interagem com o site e para tomar decisões sobre
+                melhorias no design e no conteúdo.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Veja os passos para criar o seu projeto web -->
+    <section class="passos_para_o_seu_projetos_web">
+      <div class="tema_do_procedimento_de_criacao_de_site">
+        <h1>Passos a seguir para a criação do seu websites</h1>
+
+      </div>
+      <div class="progress">
+        <div class="banner_dos_procedimentos">
+
+          <div class="banner_procedimento procedimento_numero1" id="leer">
+            <a href="http://" id="right-left--">
+              <h1 class="right-left--">Escolha do site para a sua empresa</h1>
+              <ul>
+                <li><span class="progresso-- --left">&#x2714;</span> Criação de site institucional</li>
+                <li><span class="progresso-- --left">&#x2714;</span> Criação de site portfólio</li>
+                <li><span class="progresso-- --left">&#x2714;</span> Criação de site portal de notícias</li>
+                <li><span class="progresso-- --left">&#x2714;</span> Criação de site Desportivos</li>
+                <li><span class="progresso-- --left">&#x2714;</span> Criação de site Pessoal</li>
+                <li><span class="progresso-- --left">&#x2714;</span> Criação de site hospitais</li>
+                <li><span class="progresso-- --left">&#x2714;</span> Criação de blog</li>
+              </ul>
+            </a>
+          </div>
+
+          <div class="banner_procedimento procedimento_numero2">
+            <a href="http://" id="center-centro--">
+              <h1 class="center-centro--">Os adicionais para o seu site</h1>
+              <ul>
+                <li><span class="progresso---">&#x2714;</span> Linguagem estrangeira</li>
+                <li><span class="progresso---">&#x2714;</span> Áreas restrita</li>
+                <li><span class="progresso---">&#x2714;</span> Downloads de documentos</li>
+                <li><span class="progresso---">&#x2714;</span> Administrador de conteúdo</li>
+                <li><span class="progresso---">&#x2714;</span> Transparência de conteúdo</li>
+                <li><span class="progresso---">&#x2714;</span> Backups diário</li>
+              </ul>
+            </a>
+          </div>
+
+          <div class="banner_procedimento procedimento_numero3" id="leer">
+            <a href="http://" id="right-left--">
+              <h1 class="right-left--">Dentro do prazo você terá um site novinho</h1>
+              <ul>
+                <li><span class="progresso-- --right">&#x2714;</span> Elaboração e envio de propostas</li>
+                <li><span class="progresso-- --right">&#x2714;</span> Aceite a emissão do contrato</li>
+                <li><span class="progresso-- --right">&#x2714;</span> Coleta de requisitos do cliente</li>
+                <li><span class="progresso-- --right">&#x2714;</span> Estabelecimento de metas e objetivos</li>
+                <li><span class="progresso-- --right">&#x2714;</span> Criação de wireframes e protótipos</li>
+                <li><span class="progresso-- --right">&#x2714;</span> Desenvolvimento do layout visual.</li>
+                <li><span class="progresso-- --right">&#x2714;</span> Coordenação e feedback do cliente.</li>
+                <li><span class="progresso-- --right">&#x2714;</span> Começar a programar</li>
+              </ul>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Sessão do  dos nossos projetos -->
+    <article class="view_portfolio">
+      <div class="template_do_tema">
+        <div class="ver-----">
+          <hr class="line-portfolio-- ----portfolio-line-left">
+          <h1>Portfólio</h1>
+          <hr class="line-portfolio-- ----portfolio-line-right">
+        </div>
+      </div>
+      <div id="ordem">
+        <main>
+          <div class="template_dos_sites numero_de_site1">
+            <div class="imagem_do_site numero_de_imagens_de_site_1">
+              <div class="como-fazer">
+                <div class="nome_do_site">
+                  <h4>Nome do site</h4>
+                  <a href="" target="_blank"><abbr title="Depoimentos do cliente">Depoimentos</abbr></a>
+                </div>
+
+                <div class="avalicao_do_cliente_por_estela">
+                  <h4>Avaliação do cliente</h4>
+                  <div class="yyyy">
+                    <span class="estrela--1">&#9733</span>
+                    <span class="estrela--2">&#9733</span>
+                    <span class="estrela--3">&#9733</span>
+                    <span class="estrela--4">&#9733</span>
+                    <span class="estrela--5">&#9733</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="template_dos_sites numero_de_site1">
+            <div class="imagem_do_site numero_de_imagens_de_site_1">
+              <div class="como-fazer">
+                <div class="nome_do_site">
+                  <h4>Nome do site</h4>
+                  <a href="" target="_blank"><abbr title="Depoimentos do cliente">Depoimentos</abbr></a>
+                </div>
+
+                <div class="avalicao_do_cliente_por_estela">
+                  <h4>Avaliação do cliente</h4>
+                  <div class="yyyy">
+                    <span class="estrela--1">&#9733</span>
+                    <span class="estrela--2">&#9733</span>
+                    <span class="estrela--3">&#9733</span>
+                    <span class="estrela--4">&#9733</span>
+                    <span class="estrela--5">&#9733</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="template_dos_sites numero_de_site1">
+            <div class="imagem_do_site numero_de_imagens_de_site_1">
+              <div class="como-fazer">
+                <div class="nome_do_site">
+                  <h4>Nome do site</h4>
+                  <a href="" target="_blank"><abbr title="Depoimentos do cliente">Depoimentos</abbr></a>
+                </div>
+
+                <div class="avalicao_do_cliente_por_estela">
+                  <h4>Avaliação do cliente</h4>
+                  <div class="yyyy">
+                    <span class="estrela--1">&#9733</span>
+                    <span class="estrela--2">&#9733</span>
+                    <span class="estrela--3">&#9733</span>
+                    <span class="estrela--4">&#9733</span>
+                    <span class="estrela--5">&#9733</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </main>
+        <main>
+          <div class="template_dos_sites numero_de_site1">
+            <div class="imagem_do_site numero_de_imagens_de_site_1">
+              <div class="como-fazer">
+                <div class="nome_do_site">
+                  <h4>Nome do site</h4>
+                  <a href="" target="_blank"><abbr title="Depoimentos do cliente">Depoimentos</abbr></a>
+                </div>
+
+                <div class="avalicao_do_cliente_por_estela">
+                  <h4>Avaliação do cliente</h4>
+                  <div class="yyyy">
+                    <span class="estrela--1">&#9733</span>
+                    <span class="estrela--2">&#9733</span>
+                    <span class="estrela--3">&#9733</span>
+                    <span class="estrela--4">&#9733</span>
+                    <span class="estrela--5">&#9733</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="template_dos_sites numero_de_site1">
+            <div class="imagem_do_site numero_de_imagens_de_site_1">
+              <div class="como-fazer">
+                <div class="nome_do_site">
+                  <h4>Nome do site</h4>
+                  <a href="" target="_blank"><abbr title="Depoimentos do cliente">Depoimentos</abbr></a>
+                </div>
+
+                <div class="avalicao_do_cliente_por_estela">
+                  <h4>Avaliação do cliente</h4>
+                  <div class="yyyy">
+                    <span class="estrela--1">&#9733</span>
+                    <span class="estrela--2">&#9733</span>
+                    <span class="estrela--3">&#9733</span>
+                    <span class="estrela--4">&#9733</span>
+                    <span class="estrela--5">&#9733</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="template_dos_sites numero_de_site1">
+            <div class="imagem_do_site numero_de_imagens_de_site_1">
+              <div class="como-fazer">
+                <div class="nome_do_site">
+                  <h4>Nome do site</h4>
+                  <a href="" target="_blank"><abbr title="Depoimentos do cliente">Depoimentos</abbr></a>
+                </div>
+
+                <div class="avalicao_do_cliente_por_estela">
+                  <h4>Avaliação do cliente</h4>
+                  <div class="yyyy">
+                    <span class="estrela--1">&#9733</span>
+                    <span class="estrela--2">&#9733</span>
+                    <span class="estrela--3">&#9733</span>
+                    <span class="estrela--4">&#9733</span>
+                    <span class="estrela--5">&#9733</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </main>
+        <div class="ver-mais-do-portfolio">
+          <a href="portfolio_wts.html"><button type="submit">Ver mais</button></a>
+        </div>
+      </div>
+      <div class="linha-do-portfolio">
+        <hr id="linha-do-portfolio">
+      </div>
+    </article>
+
+    <!-- Sessão de comentários dos clientes-->
+    <section class="sessao_dos_comentario">
+      <div class="tema_do_comentario">
+        <h1>Comentários dos usuários</h1>
+      </div>
+      <div class="stard_bar_dos_comentarios">
+        <div class="comentario_dos_clientes">
+          <div class="comentarios_feitos">
+            <div class="brilho">
+              <hr class="nome-linha-comentario">
+              <h1>João Silva</h1>
+            </div>
+            <p>
+              A Web Tech Solution fez um trabalho incrível no de&shy;senvolvimento do
+              nosso site! Estamos muito satisfeitos com o design moderno e a
+              funcionalidade perfeita. Recomendamos totalmente!
+            </p>
+          </div>
+
+          <div class="comentarios_feitos" id="--outro-fundo">
+            <div class="brilho">
+              <hr class="nome-linha-comentario">
+              <h1>Maria Santos</h1>
+            </div>
+            <p>
+              Contratamos a Web Tech Solution para criar o nosso site e ficamos
+              extremamente felizes com o resultado. Eles entenderam perfeitamente
+              as nossas necessidades e entregaram um site profissional e atrativo.
+              Obrigado!
+            </p>
+          </div>
+
+          <div class="comentarios_feitos">
+            <div class="brilho">
+              <hr class="nome-linha-comentario">
+              <h1>Pedro Almeida</h1>
+            </div>
+            <p>
+              O serviço prestado pela Web Tech Solution foi excepcional. Além de
+              nos ajudarem a criar um site personalizado, eles foram muito
+              atenciosos e prestativos durante todo o processo. Recomendo de olhos
+              fechados!
+            </p>
+          </div>
+
+          <div class="comentarios_feitos" id="--outro-fundo">
+            <div class="brilho">
+              <hr class="nome-linha-comentario">
+              <h1>Gustavo Ferreira</h1>
+            </div>
+            <p>
+              A equipe da Web Tech Solution é extremamente talentosa. Eles
+              entenderam perfeitamente a visão da nossa empresa e criaram um site
+              que reflete nossa identidade. Recomendo a todos!
+            </p>
+          </div>
+
+          <div class="comentarios_feitos">
+            <div class="brilho">
+              <hr class="nome-linha-comentario">
+              <h1>Laura Mendes</h1>
+            </div>
+            <p>
+              A Web Tech Solution foi fundamental para o sucesso do meu negócio.
+              Eles criaram um site incrível que atraiu muitos clientes. Estou
+              extremamente satisfeito com o trabalho deles!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  perguntas frequentes-->
+    <section class="sessao_das_perguntas_frequentes">
+      <div class="sesaao_das_perguntas">
+
+        <div id="tema_comentario">
+          <h1>Perguntas Frequentes</h1>
+        </div>
+        <div id="perguntas_dos_users">
+          <div class="prepara">
+
+            <abbr title="Click na pergunta para aparecer na tela de lado" style="text-decoration: none;">
+              <main class="pergunta_" id="div1">
+                <div class="perfil urser1">
+                  <!--Foto de perfil-->
+                  <h1>P</h1>
+                </div>
+                <div class="pergunta_ feita_1">
+                  <div class="nome_do_usuario">
+                    <!-- Nome do usuário que comentou-->
+                    <h3>Paulo da Silva</h3>
+                  </div>
+                  <div class="conteudo_do_comentario">
+                    <!-- Escreve aqui o comentário-->
+                    <p>
+                      Qual é o tipo de serviços que a Web Tach Solution oferece?
+                    </p>
+                  </div>
+                </div>
+              </main>
+            </abbr>
+
+            <abbr title="Click na pergunta para aparecer na tela de lado" style="text-decoration: none;">
+              <main class="pergunta_" id="div2">
+                <div class="perfil urser2">
+                  <!--Foto de perfil-->
+                  <h1>A</h1>
+                </div>
+                <div class="pergunta_ feita_2">
+                  <div class="nome_do_usuario">
+                    <!-- Nome do usuário que comentou-->
+                    <h3>Ana Santos</h3>
+                  </div>
+                  <div class="conteudo_do_comentario">
+                    <!-- Escreve aqui o comentário-->
+                    <p>
+                      Vocês têm experiência em criar sites para diferentes setores?
+                    </p>
+                  </div>
+                </div>
+              </main>
+            </abbr>
+
+            <abbr title="Click na pergunta para aparecer na tela de lado" style="text-decoration: none;">
+              <main class="pergunta_" id="div3">
+                <div class="perfil urser3">
+                  <!--Foto de perfil-->
+                  <h1>P</h1>
+                </div>
+                <div class="pergunta_ feita_3">
+                  <div class="nome_do_usuario">
+                    <!-- Nome do usuário que comentou-->
+                    <h3>Pedro Oliveira</h3>
+                  </div>
+                  <div class="conteudo_do_comentario">
+                    <!-- Escreve aqui o comentário-->
+                    <p>
+                      Quanto custa para criar um site com vocês?
+                    </p>
+                  </div>
+                </div>
+              </main>
+            </abbr>
+
+            <abbr title="Click na pergunta para aparecer na tela de lado" style="text-decoration: none;">
+              <main class="pergunta_" id="div4">
+                <div class="perfil urser4">
+                  <!--Foto de perfil-->
+                  <h1>M</h1>
+                </div>
+                <div class="pergunta_ feita_4">
+                  <div class="nome_do_usuario">
+                    <!-- Nome do usuário que comentou-->
+                    <h3>Maria Costa</h3>
+                  </div>
+                  <div class="conteudo_do_comentario">
+                    <!-- Escreve aqui o comentário-->
+                    <p>
+                      Quanto tempo leva para desenvolver um site?
+                    </p>
+                  </div>
+                </div>
+              </main>
+            </abbr>
+
+            <abbr title="Click na pergunta para aparecer na tela de lado" style="text-decoration: none;">
+              <main class="pergunta_" id="div5">
+                <div class="perfil urser5">
+                  <!--Foto de perfil-->
+                  <h1>C</h1>
+                </div>
+                <div class="pergunta_ feita_5">
+                  <div class="nome_do_usuario">
+                    <!-- Nome do usuário que comentou-->
+                    <h3>Carlos Pereira</h3>
+                  </div>
+                  <div class="conteudo_do_comentario">
+                    <!-- Escreve aqui o comentário-->
+                    <p>
+                      Quais são os principais recursos que vocês oferecem para otimização de mecanismos de busca?
+                    </p>
+                  </div>
+                </div>
+              </main>
+            </abbr>
+
+            <abbr title="Click na pergunta para aparecer na tela de lado" style="text-decoration: none;">
+              <main class="pergunta_" id="div6">
+                <div class="perfil urser6">
+                  <!--Foto de perfil-->
+                  <h1>S</h1>
+                </div>
+                <div class="pergunta_ feita_6">
+                  <div class="nome_do_usuario">
+                    <!-- Nome do usuário que comentou-->
+                    <h3>Sofia Rodrigues</h3>
+                  </div>
+                  <div class="conteudo_do_comentario">
+                    <!-- Escreve aqui o comentário-->
+                    <p>
+                      Vocês oferecem serviços de marketing nas redes sociais?
+                    </p>
+                  </div>
+                </div>
+              </main>
+            </abbr>
+
+            <abbr title="Click na pergunta para aparecer na tela de lado" style="text-decoration: none;">
+              <main class="pergunta_" id="div7">
+                <div class="perfil urser7">
+                  <!--Foto de perfil-->
+                  <h1>M</h1>
+                </div>
+                <div class="pergunta_ feita_7">
+                  <div class="nome_do_usuario">
+                    <!-- Nome do usuário que comentou-->
+                    <h3>Miguel Fernandes</h3>
+                  </div>
+                  <div class="conteudo_do_comentario">
+                    <!-- Escreve aqui o comentário-->
+                    <p>
+                      Vocês têm experiência em desenvolver aplicativos móveis?
+                    </p>
+                  </div>
+                </div>
+              </main>
+            </abbr>
+
+            <abbr title="Click na pergunta para aparecer na tela de lado" style="text-decoration: none;">
+              <main class="pergunta_" id="div8">
+                <div class="perfil urser8">
+                  <!--Foto de perfil-->
+                  <h1>M</h1>
+                </div>
+                <div class="pergunta_ feita_8">
+                  <div class="nome_do_usuario">
+                    <!-- Nome do usuário que comentou-->
+                    <h3>Marta Sousa</h3>
+                  </div>
+                  <div class="conteudo_do_comentario">
+                    <!-- Escreve aqui o comentário-->
+                    <p>
+                      Vocês oferecem suporte contínuo após o lançamento do site?
+                    </p>
+                  </div>
+                </div>
+              </main>
+            </abbr>
+
+            <abbr title="Click na pergunta para aparecer na tela de lado" style="text-decoration: none;">
+              <main class="pergunta_" id="div9">
+                <div class="perfil urser9">
+                  <!--Foto de perfil-->
+                  <h1>A</h1>
+                </div>
+                <div class="pergunta_ feita_9">
+                  <div class="nome_do_usuario">
+                    <!-- Nome do usuário que comentou-->
+                    <h3>André Almeida</h3>
+                  </div>
+                  <div class="conteudo_do_comentario">
+                    <!-- Escreve aqui o comentário-->
+                    <p>
+                      Vocês oferecem serviços de hospedagem de sites?
+                    </p>
+                  </div>
+                </div>
+              </main>
+            </abbr>
+
+            <abbr title="Click na pergunta para aparecer na tela de lado" style="text-decoration: none;">
+              <main class="pergunta_" id="div10">
+                <div class="perfil urser10">
+                  <!--Foto de perfil-->
+                  <h1>L</h1>
+                </div>
+                <div class="pergunta_ feita_10">
+                  <div class="nome_do_usuario">
+                    <!-- Nome do usuário que comentou-->
+                    <h3>Laura Santos</h3>
+                  </div>
+                  <div class="conteudo_do_comentario">
+                    <!-- Escreve aqui o comentário-->
+                    <p>
+                      Vocês oferecem serviços de segurança para proteger meu site contra ataques?
+                    </p>
+                  </div>
+                </div>
+              </main>
+            </abbr>
+
+          </div>
+        </div>
+        <script>
+          const pergunta = document.querySelector('.prepara');
+
+          pergunta.addEventListener('mouseover', function () {
+            pergunta.style.animationPlayState = 'paused';
+          });
+
+          pergunta.addEventListener('mouseout', function () {
+            pergunta.style.animationPlayState = 'running';
+          });
+
+        </script>
+      </div>
+      <div class="sessao_das_respostas_frequentes">
+        <!-- Código do iframe das pergunta vai ser feito em outra página
+              mais quando for no telefone vai esta como display none -s-->
+        <iframe src="respostas_wts.html" frameborder="0" id="myiframe" width="100%" height="300px"></iframe>
+
+        <script>
+          const divs = document.querySelectorAll('.pergunta_');
+          const iframe = document.getElementById('myiframe');
+
+          divs.forEach(function (div) {
+            div.addEventListener('click', function () {
+              const divid = this.id;
+              let filePath = 'respostas_wts.html#resposta';
+
+              if (divid === 'div1') {
+                filePath = 'respostas_wts.html#resposta-1';
+              } else if (divid === 'div2') {
+                filePath = 'respostas_wts.html#resposta-2';
+              } else if (divid === 'div3') {
+                filePath = 'respostas_wts.html#resposta-3';
+              } else if (divid === 'div4') {
+                filePath = 'respostas_wts.html#resposta-4';
+              } else if (divid === 'div5') {
+                filePath = 'respostas_wts.html#resposta-5';
+              } else if (divid === 'div6') {
+                filePath = 'respostas_wts.html#resposta-6';
+              } else if (divid === 'div7') {
+                filePath = 'respostas_wts.html#resposta-7';
+              } else if (divid === 'div8') {
+                filePath = 'respostas_wts.html#resposta-8';
+              } else if (divid === 'div9') {
+                filePath = 'respostas_wts.html#resposta-9';
+              } else if (divid === 'div10') {
+                filePath = 'respostas_wts.html#resposta-10';
+              }
+              iframe.src = filePath;
+              /* este codigo e quendo o site sestiver na internet por causa do link
+              let link = 'https://www.respostas_wts.com';
+
+              if(divId === 'div1'){
+              link = 'https://www.respostas_wts.com';
+              }
+              else if(divId === 'div2'){
+              link = 'https://www.respostas_wts.com';
+              }
+              iframe.src = link; */
+            })
+          })
+        </script>
+      </div>
+    </section>
+
+    <!-- Sessão da solicitação de orçamento pelo WhatsApp  do cliente -->
+    <section class="solicitar_orcamento">
+      <div id="solicitar_orcamento">
+
+        <div class="porque_eu_devo_ter_um_site">
+          <h1>Porque solicitar um orçamento?</h1>
+          <p>
+            Como uma empresa de criação de sites, nós oferecemos uma série de benefícios
+            para os nossos clientes. Ao solicitar um orçamento conosco, você terá acesso a
+            uma equipe de profissionais experientes que irão desenvolver um site
+            personalizado, de acordo com as suas necessidades e objetivos.
+          </p>
+        </div>
+
+        <div class="plataformas_onde_os_site_vao_estar">
+          <div class="imagem-das-interface-dos-sites"></div>
+        </div>
+
+        <div class="botao_solicitar_orcamento">
+          <h1>solicita um orçamento</h1>
+
+          <button class="solicita_orcamento _whatsApp"><a href="" target="">Solicitar
+              WhatsApp</a></button>
+
+          <button class="solicita_orcamento _Email"><a href="" target="">Solicitar E-mail
+            </a></button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- sesao do blog-->
+    <section id="sessao_do_blog">
+      <div class="barra_de_se_sub_screver">
+        <div class="gg">
+          <div class="tema_do_conteudo_do_subscreve">
+            <p>
+              Se você quer ver mais e se inscrever em nossas notícias, é só me
+              informar seu endereço de e-mail e eu vou garantir que você seja adicionado
+              à nossa lista de e-mails.
+            </p>
+          </div>
+          <div class="espacamento_do_botao_de_subscrever">
+            <input type="text" name="nome" class="subscreve-input" placeholder="Digite o seu E-mail">
+            <button class="subscreve-btn"><a target="" href="">Subscrever</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="template_das_informacoes">
+        <div class="tema_blog">
+          <h1>Blog</h1>
+        </div>
+        <div class="janelas_das_noticias">
+          <div class="kkk">
+            <div class="noticia_em_destaque">
+              <!-- Aqui vai a notícia em destaque-->
+              <div class="conteudo-da-noticia-em-destaque">
+                <div class="conteudo-da-noticia">
+                  <h2>Javascript</h2>
+                  <p>
+                    O javascript tem váris funcionalidades incríveis
+                    ele pode ser usado para criar interatividade em site.
+                  </p>
+                  <p class="ver_mais_ver_menos">
+                    Como formulários dinâmicos e botões que respondem a cliques.
+                    Além disso, o javascript permite manipular e modificar elementos em uma página web
+
+                  </p>
+                  <kbd class="data-da-publicacao-da-noticia">2024 / 04 / 16:20</kbd>
+                </div>
+                <button type="submit" class="ver_mais_conteudo">
+                  <a class="ver__mais">ver mais</a>
+                  <a class="ver__menus">ver menus</a>
+                </button>
+                <script>
+                  const btnvermais = document.querySelector('.ver_mais_conteudo');
+                  const containerdoconteudo = document.querySelector('.ver_mais_ver_menos');
+                  const ver__mais = document.querySelector('.ver__mais');
+                  const ver__menus = document.querySelector('.ver__menus');
+                  btnvermais.onclick = function () {
+                    this.classList.toggle('active')
+                    containerdoconteudo.classList.toggle('active')
+                    ver__mais.classList.toggle('active');
+                    ver__menus.classList.toggle('active');
+                  }
+
+                </script>
+              </div>
+            </div>
+            <div id="outas_noticias">
+              <div class="outas_noticias">
+
+                <div class="noticia_mais bbloco_1">
+                  <div class="outras-noticias-image noticia-ima-1">
+                    <!-- imagem da noticia -->
+                  </div>
+                  <div class="conteudo_da_noticia">
+
+                    <!-- conteúdo da noticia -->
+                    <h3>"Novo recurso do CSS grid permite criar layouts complexos de forma mais fácil."</h3>
+                    <p>
+                      Isso significa que agora os desenvolvedores podem criar layouts avaçados usando CSS Grid de
+                      maneira
+                      mais eficiente. Isso é ótimo para projetos que exigem designs complexos e responsivos.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="noticia_mais bbloco_2">
+                  <div class="outras-noticias-image noticia-ima-2">
+                    <!-- imagem da noticia -->
+                  </div>
+                  <div class="conteudo_da_noticia">
+                    <h3>"JavaScript ES2020 traz novos recursos, como o operador de coalescência nula e
+                      encadeamento opcional."</h3>
+                    <p>
+                      Com a nova versão do JavaScript, os desenvolvedores
+                      têm acesso a recursos poderosos, como o operador de coalescência nula, que
+                      simplifica a verificação de valores nulos ou indefinidos. O encadeamento opcional
+                      também permite acessar propriedades de objetos aninhados de forma mais segura.
+                    </p>
+                    <!-- conteúdo da noticia -->
+                  </div>
+                </div>
+
+                <div class="noticia_mais bbloco_3">
+                  <div class="outras-noticias-image noticia-ima-3">
+                    <!-- imagem da noticia -->
+                  </div>
+                  <div class="conteudo_da_noticia">
+                    <h3>"Nova versão do Bootstrap, Bootstrap 5, é lançada com mais recursos e melhorias de desempenho."
+                    </h3>
+                    <p>
+                      O Bootstrap é uma das bibliotecas de CSS mais populares para desenvolvimento web.
+                      A versão 5 traz novos recursos e melhorias de
+                      desempenho, tornando mais fácil e eficiente criar interfaces responsivas e modernas.
+                    </p>
+                    <!-- conteúdo da noticia -->
+                  </div>
+                </div>
+
+                <div class="noticia_mais bbloco_4">
+                  <div class="outras-noticias-image noticia-ima-4">
+                    <!-- imagem da noticia -->
+                  </div>
+                  <div class="conteudo_da_noticia">
+                    <h3>"React Native ganha popularidade como uma opção para desenvolvimento de aplicativos
+                      móveis multiplataforma."</h3>
+                    <p>
+                      O React Native é uma estrutura de desenvolvimento que permite criar aplicativos
+                      móveis para iOS e Android usando JavaScript. Sua popularidade está crescendo
+                      rapidamente devido à sua eficiência e capacidade de compartilhar código entre as plataformas.
+                    </p>
+                    <!-- conteúdo da noticia -->
+                  </div>
+                </div>
+
+                <div class="noticia_mais bbloco_5">
+                  <div class="outras-noticias-image noticia-ima-5">
+                    <!-- imagem da noticia -->
+                  </div>
+                  <div class="conteudo_da_noticia">
+                    <h3>"WebAssembly está revolucionando o desenvolvimento web
+                      ao permitir que linguagens de programação de alto nível sejam
+                      executadas no navegador."</h3>
+                    <p>
+                      Com o WebAssembly, os desenvolvedores podem usar linguagens como
+                      C++, Rust e muitas outras para criar aplicativos web de alto desempenho.
+                      Isso abre um mundo de possibilidades para o desenvolvimento web além do JavaScript.
+                    </p>
+                    <!-- conteúdo da noticia -->
+                  </div>
+                </div>
+
+                <div class="noticia_mais bbloco_6">
+                  <div class="outras-noticias-image noticia-ima-6">
+                    <!-- imagem da noticia -->
+                  </div>
+                  <div class="conteudo_da_noticia">
+                    <h3>"A biblioteca jQuery continua sendo uma ferramenta útil
+                      para manipulação de elementos HTML e interações do usuário." </h3>
+                    <p>
+                      O jQuery é uma biblioteca JavaScript que simplifica a manipulação
+                      de elementos HTML e interações do usuário. Embora outras bibliotecas
+                      tenham ganhado popularidade, o jQuery ainda é amplamente
+                      utilizado e oferece recursos úteis para o desenvolvimento web.
+                    </p>
+                    <!-- conteúdo da noticia -->
+                  </div>
+                </div>
+
+                <div class="noticia_mais bbloco_7">
+                  <div class="outras-noticias-image noticia-ima-7">
+                    <!-- imagem da noticia -->
+                  </div>
+                  <div class="conteudo_da_noticia">
+                    <h3>"GraphQL está ganhando destaque como uma alternativa eficiente para a criação de APIs."</h3>
+                    <p>
+                      O GraphQL é uma linguagem de consulta para APIs que permite
+                      aos desenvolvedores buscar e manipular dados de forma mais
+                      eficiente do que as abordagens tradicionais. Ele oferece flexibilidade e
+                      desempenho, tornando-se uma escolha popular para o desenvolvimento de APIs.
+                    </p>
+                    <!-- conteúdo da noticia -->
+                  </div>
+                </div>
+
+                <div class="noticia_mais bbloco_8">
+                  <div class="outras-noticias-image noticia-ima-8">
+                    <!-- imagem da noticia -->
+                  </div>
+                  <div class="conteudo_da_noticia">
+                    <h3>"Python continua sendo uma das linguagens de programação mais populares e versáteis."</h3>
+                    <p>
+                      Python é conhecido por sua sintaxe limpa e legibilidade,
+                      tornando-o uma ótima escolha para iniciantes e profissionais.
+                      Sua ampla gama de bibliotecas e frameworks também o torna adequado para
+                      uma variedade de aplicações, desde desenvolvimento web até ciência de dados.
+                    </p>
+                    <!-- conteúdo da noticia -->
+                  </div>
+                </div>
+
+                <div class="noticia_mais bbloco_9">
+                  <div class="outras-noticias-image noticia-ima-9">
+                    <!-- imagem da noticia -->
+                  </div>
+                  <div class="conteudo_da_noticia">
+                    <h3>"A inteligência artificial está transformando várias indústrias, incluindo medicina, finanças e
+                      transporte."</h3>
+                    <p>
+                      A IA está revolucionando a forma como as empresas operam, permitindo automação, análise de dados
+                      avançada e tomada de decisões inteligentes. Essa tecnologia está sendo aplicada em várias
+                      áreas, melhorando a eficiência e a precisão em diversos setores.
+                    </p>
+                    <!-- conteúdo da noticia -->
+                  </div>
+                </div>
+
+                <div class="noticia_mais bbloco_10">
+                  <div class="outras-noticias-image noticia-ima-10">
+                    <!-- imagem da noticia -->
+                  </div>
+                  <div class="conteudo_da_noticia">
+                    <h3>"A realidade virtual e a realidade aumentada estão se tornando
+                      cada vez mais presentes em jogos e aplicações de entretenimento."</h3>
+                    <p>
+                      Com a realidade virtual e a realidade aumentada, os usuários
+                      podem mergulhar em experiências imersivas e interagir com
+                      ambientes virtuais. Essa tecnologia está sendo amplamente
+                      adotada na indústria de jogos e também está sendo
+                      explorada em outras áreas, como treinamento e turismo.
+                    </p>
+                    <!-- conteúdo da noticia -->
+                  </div>
+                </div>
+
+                <script>
+                  const perguntat = document.querySelector('.outas_noticias');
+                  perguntat.addEventListener('mouseover', function () {
+                    perguntat.style.animationPlayState = 'paused';
+                  });
+
+                  perguntat.addEventListener('mouseout',
+                    function () {
+                      perguntat.style.animationPlayState =
+                        'running';
+                    });
+                </script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sessao_do_curso">
+      <div class="sessao_do_conteudo_do_curso_e_dos_banners">
+        <div class="sessao_dos_conteudos_dos_cursos">
+          <div class="tema_da_sessao_do_curso">
+            <!--<marquee behavior="scroll" scrollamount=".5" direction="down
+      ></marquee>-->
+            <h1>Cursos</h1>
+
+          </div>
+          <div class="sessao_da_divugacao_do_curso">
+            <p>
+              <b style="font-size: 13pt; font-weight: bold; margin-bottom:
+        5px;"> Você está pronto para mergulhar no mundo do
+                desenvolvimento
+                web?</b><br><br>Na Web Tach Solution, oferecemos cursos
+              incríves de
+              HTML, CSS e JavaScript, perfeitos para iniciantes que
+              desejam
+              aprender a criar sites incríves.
+            </p>
+          </div>
+          <div class="sessao_do_butao_de_ver_mais_curso">
+            <button><a href="http://"><span>Ver mais</span> <span>&rar
+                  ;</span></a></button>
+          </div>
+        </div>
+
+        <div class="sessao_do_cordao_dos_cursos">
+          <iframe src="cursos_wts.html" id="mycursos" frameborder="0"></iframe>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="sobre__nos">
+      <div class="div_do_spaco">
+        <div class="logo_marca_da_empresa">
+          lodo da emprea
+        </div>
+        <div class="sessao_do_conteudo_sobre_a_empresa">
+          <div class="div_da_sesseao_do_conteudo_sobre">
+            <div>
+              <h1>Sobre-nós</h1>
+
+            </div>
+            <div>
+              <p>
+                <b style="color: #007FFF;">Web Tach Solution</b> é uma
+                empresa que foi criada no dia x/x/x, capaz de resolver
+                os problemas
+                que o seu site enfrenta. Começamos a oferecer nossos
+                serviços no dia x/x/x e,
+                ao longo dos anos, conseguimos atender a um número
+                considerável de
+                empresas, desde grandes até pequenas, como: nome_empres
+                , nome_empresa, nome_empresa.
+              </p>
+              <p>
+                A <abbr title="Web Tach Solution" style="text-decoration:
+                  none;">WTS</abbr> é especializada na criação e manutenção
+                de sites. Temos a capacidade
+                e habilidade para atualizar códigos antigos para os mais
+                recentes, de acordo
+                com as preferências dos clientes, desde o design até a
+                funcionalidade do
+                site.
+              </p>
+              <p>
+                Nossa missão é iluminar o mundo da tecnologia e ajudar as
+                empresas a expandir
+                seus serviços no mundo digital. Além disso, oferecemos
+                diversos outros serviços
+                que você pode conhecer através do nosso site, contando com
+                longo uma equipe de profissionais
+                especializados em cada área em que atuamos.
+
+              </p>
+              <p style="display: none;">
+                Acreditamos que uma empresa sem site está fora do alcance
+                digital e uma empresa
+                fora do alcance digital não pode ser considerada um sucesso.
+                Por isso, estamos
+                comprometidos em oferecer confiança acima da média aos
+                nossos clientes e garantir
+                que vale a pena escolher nossos serviços quando se trata de
+                obter resultados satisfatórios.
+
+                Para que tudo isso seja possível, é importante acreditar em
+                nossa capacidade de
+                transformar ideias em realidade.Claro, Fernando! Aqui está o
+                texto completo com
+                as edições que fizemos:
+
+                "Para a existência da mesma, precisamos acreditar que somos
+                capazes de um dia
+                realizar o sonho de muitos anos atrás. Passaram anos e anos
+                para estarmos aqui
+                hoje, prestando serviços para os nossos clientes com maior
+                força de vontade.
+
+                Tivemos confiança de que, em prol da nossa dedicação,
+                estaríamos hoje fazendo
+                o que sabemos fazer melhor. Acreditamos no nosso potencial e
+                persistimos no
+                sonho, o que nos levou ao sucesso que temos hoje. Estamos
+                muito orgulhosos do
+                nosso percurso até agora!
+              </p>
+            </div>
+          </div>
+          <div class="barra_de_analisa_dos_projetos">
+            <div class="div">
+              <article>
+                <div class="div_de_cima__">
+                  <span>+</span> 7
+                </div>
+                <div class="div_de_baixo__">
+                  Meses
+                </div>
+              </article>
+
+              <article style="border-left:4px solid white;border-right:4px
+                solid white;">
+                <div class="div_de_cima__">
+                  <span>+</span> 6
+                </div>
+                <div class="div_de_baixo__">
+                  Projetos
+                </div>
+              </article>
+
+              <article>
+                <div class="div_de_cima__">
+                  <span>+</span> 15
+                </div>
+                <div class="div_de_baixo__">
+                  Clientes atendidos
+                </div>
+              </article>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sessao_do_contato">
+      <div class="div_do_espacamento_interno">
+        <div class="sessao_da_logo_do_contato">
+          <div class="ii"></div>
+        </div>
+        <div class="sessao_da_forma_de_contato">
+          <div>
+            <div class="dd">
+              <h1>Contacta-nós!</h1>
+              <p>
+                complete o formúlario abaixo para saber como podemos ajudar a
+                sua empresa ou negócio.
+              </p>
+            </div>
+            <form action="" method="post" id="formulario_orcamento">
+              <div id="spacamento">
+
+                <div class="inputBox">
+                  <input type="text" required="required" maxlength="30">
+                  <span>Nome</span>
+                </div>
+
+                <div class="inputBox">
+                  <input type="text" required="required" maxlength="37">
+                  <span>Telefone</span>
+                </div>
+
+                <div class="inputBox">
+                  <input type="text" required="required" maxlength="37">
+                  <span>E-mail</span>
+                </div>
+
+                <div class="inputBox">
+                  <textarea required="required" name="" id="mensagem" placeholder="Em que podemos ajudar?"></textarea>
+
+                </div>
+
+                <div>
+                  <input type="submit" class="enviar"></input>
+                </div>
+
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="rodape_do_site">
+      <div class="header_do_footer">
+        <div class="logomaca_da_empresa">
+          logo da empresa
+        </div>
+        <div class="redes_ou_midias_sociais">
+          <div class="n1_____ facebook"></div>
+          <div class="n1_____ instagram"></div>
+          <div class="n1_____ linkedln"></div>
+          <div class="n1_____ tiktok"></div>
+          <div class="n1_____ whatsApp"></div>
+        </div>
+      </div>
+      <div class="div_do_centro_do_footer">
+        <div class="div_numero_1">
+          <h1>Sub Menu</h1>
+          <hr class="linha_do_limite_do_footer">
+          <ul>
+            <li><a href="index_wts.html" target="">Inicio</a></li>
+            <li><a href="criacoes_wts.html" target="">Criações</a></li>
+            <li><a href="servicos_wts.html" target="">Serviços</a></li>
+            <li><a href="portfolio_wts.html" target="">Portfólio</a></li>
+            <li><a href="blog_wts.html" target="">Blog</a></li>
+            <li><a href="cursos_wts_.html" target="">Cursos</a></li>
+          </ul>
+        </div>
+        <div class="div_numero_2">
+          <h1>Links rápidos</h1>
+          <hr class="linha_do_limite_do_footer">
+          <ul>
+            <li>Perguntas Frequentes</li>
+            <li>Trabalhe conosco</li>
+            <li>Casos de sucesso</li>
+            <li>Nossa história</li>
+            <li>Suporte</li>
+            <li></li>
+          </ul>
+        </div>
+        <div class="div_numero_3">
+          <h1>Servicos</h1>
+          <hr class="linha_do_limite_do_footer">
+          <ul>
+            <li>Desenvolvimento Website</li>
+            <li>Manunteção de Website</li>
+            <li>Criações de Branding</li>
+            <li>Estrategia de SEO</li>
+            <li>Outras soluções</li>
+            <li></li>
+          </ul>
+        </div>
+        <div class="div_numero_4">
+          <h1>Cursos</h1>
+          <hr class="linha_do_limite_do_footer">
+          <ul>
+            <li><a href="" target=""><abbr title="Curso de html para
+              iniciante">HTML</abbr></a></li>
+            <li><a href="" target=""><abbr title="Curso de css para
+              iniciante">CSS</abbr></a></li>
+            <li><a href="" target=""><abbr title="Curso de Javascript para
+              iniciante">JavaScript</abbr></a></li>
+            <li>React</li>
+            <li>Github</li>
+            <li></li>
+          </ul>
+        </div>
+        <div class="div_numero_5">
+          <h1>Solicitar orcamento</h1>
+          <hr class="linha_do_limite_do_footer">
+          <input type="text" name="" id="">
+          <input type="submit" name="" id="" value="solicitar">
+        </div>
+      </div>
+
+      <div class="footer_do_footer__">
+        <div class="documento_importante">
+          <a href="">Copyright&copy; 2024 Web Tach Solution.</a>
+          <p>
+            Todos os direitos reservados
+          </p>
+        </div>
+        <div class="outros_documentos____">
+          <a href="">Politica de privacidade</a>
+          <p>
+            Termos & condicoes
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

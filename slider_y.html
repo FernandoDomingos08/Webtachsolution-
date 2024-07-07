@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .slider {
+      width: 800px;
+      height: 400px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .slides {
+      display: flex;
+      width: 300%;
+      animation: slideShow 30s infinite;
+    }
+
+    .slides img {
+      width: 33.33%;
+      height: 100%;
+    }
+
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .bullets {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+    }
+
+    .bullet {
+      cursor: pointer;
+      height: 10px;
+      width: 10px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .bullet:hover {
+      background-color: #555;
+    }
+
+    @keyframes slideShow {
+      0% {
+        left: 0;
+      }
+      20% {
+        left: 0;
+      }
+      25% {
+        left: -100%;
+      }
+      45% {
+        left: -100%;
+      }
+      50% {
+        left: -200%;
+      }
+      70% {
+        left: -200%;
+      }
+      75% {
+        left: -300%;
+      }
+      95% {
+        left: -300%;
+      }
+      100% {
+        left: -300%;
+      }
+    }
+  </style>
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function slide(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let slides = document.getElementsByClassName("slides")[0];
+      let dots = document.getElementsByClassName("bullet");
+      if (n > slides.children.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = slides.children.length
+      }
+      for (let i = 0; i < slides.children.length; i++) {
+      </script>
+    </head>
+    <body>
+      <div class="slider">
+        <div class="slides">
+          <div alt="Slide 1"></div>
+            <img src="Screenshot_20240126_123639_Facebook.jpg" alt="Slide 2">
+            <img src="Screenshot_20240315_084841_Facebook.jpg" alt="Slide 3">
+          </div>
+          <button class="prev" onclick="slide(-1)">&#10094;</button>
+          <button class="next" onclick="slide(1)">&#10095;</button>
+          <div class="bullets">
+            <span class="bullet" onclick="currentSlide(1)"></span>
+            <span class="bullet" onclick="currentSlide(2)"></span>
+            <span class="bullet" onclick="currentSlide(3)"></span>
+          </div>
+        </div>
+      </body>
+    </html>
